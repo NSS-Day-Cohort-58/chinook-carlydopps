@@ -1,6 +1,7 @@
 -- Query that shows the most purchased track(s) of 2013 
 
 -- Returns only one of the tracks that has the max purchase amount
+
 SELECT
     t.name,
     SUM(il.quantity) as Purchases
@@ -12,6 +13,7 @@ GROUP BY t.name
 ORDER BY Purchases DESC LIMIT 1;
 
 -- Returns all tracks that have the max purchase amount
+
 SELECT
     groupedIl.name,
     groupedIl.Purchases
