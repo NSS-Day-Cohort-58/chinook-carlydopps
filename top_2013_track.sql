@@ -12,7 +12,7 @@ WHERE i.invoiceDate LIKE "2013%"
 GROUP BY t.name
 ORDER BY Purchases DESC LIMIT 1;
 
--- Returns all tracks that have the max purchase amount
+-- Returns all tracks that have the max purchase amount - based on quantity to account for more than one of the same track being purchased
 
 SELECT
     groupedIl.name,
