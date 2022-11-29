@@ -4,5 +4,4 @@ SELECT
     i.*, 
     t.Name as "TrackName"
 FROM InvoiceLine i
-JOIN Track t
-    ON t.trackId = i.trackId;
+JOIN Track t ON t.trackId = i.trackId;

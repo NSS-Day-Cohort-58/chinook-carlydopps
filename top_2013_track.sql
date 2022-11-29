@@ -1,4 +1,4 @@
--- Query that shows the most purchased track(s) of 2013
+-- Query that shows the most purchased track(s) of 2013 - returns all tracks that have the max purchase amount
 
 SELECT
     groupedIl.name,

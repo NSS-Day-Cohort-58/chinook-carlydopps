@@ -6,8 +6,7 @@ SELECT
     i.invoiceDate, 
     i.billingCountry 
 FROM Invoice i
-JOIN Customer c
-    ON c.customerId = i.customerId
+JOIN Customer c ON c.customerId = i.customerId
 WHERE billingCountry = 'Brazil';
 
 SELECT 
@@ -16,6 +15,5 @@ SELECT
     i.invoiceDate, 
     i.billingCountry 
 FROM Invoice i
-JOIN Customer c
-    ON c.customerId = i.customerId
+JOIN Customer c ON c.customerId = i.customerId
 WHERE c.country = 'Brazil';

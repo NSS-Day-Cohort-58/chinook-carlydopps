@@ -4,6 +4,5 @@ SELECT
     p.name as "PlaylistName",
     COUNT(pt.playlistId) as "TracksPerPlaylist"
 FROM PlaylistTrack pt
-JOIN Playlist p
-    ON p.playlistId = pt.playlistId
+JOIN Playlist p ON p.playlistId = pt.playlistId
 GROUP BY p.playlistId;

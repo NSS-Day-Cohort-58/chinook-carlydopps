@@ -5,5 +5,4 @@ SELECT
     t.name as "TrackName",
     t.composer as "Artist"
 FROM InvoiceLine i
-JOIN Track t
-    ON t.trackId = i.trackId;
+JOIN Track t ON t.trackId = i.trackId;
